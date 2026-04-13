@@ -9,3 +9,70 @@ img {
     display: block;
     max-width:100%;
 }
+
+body{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    h1 {
+        margin: 0;
+    }
+}
+
+
+.table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    p {
+        /* margin-top: auto; */
+        font-family: inherit;
+    }
+
+    button {
+        width: 100px;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 5px 10px;
+        background-color: aquamarine;
+        font-family: inherit;
+        cursor: pointer;
+    }
+}
+
+.cards{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 140px;
+    background: rgb(150, 177, 150);
+    border: 1px solid black;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    /* transition smooth movement of cards , manage animation flip cards */
+    transition: left 0.5s ease, transform 0.6s ease;
+}
+
+.flipped {
+    /* need to change translate back again or there is a problem */
+    transform: translateY(-50%) rotateY(180deg);    
+}
+
+.text_zone{
+    margin-top: auto;
+}
