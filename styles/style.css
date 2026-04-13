@@ -4,19 +4,22 @@
 *::after {
     box-sizing: border-box;
 }
+
 /* Fait tenir les images dans leur parent et enlève l'espacement en bottom */
 img {
     display: block;
-    max-width:100%;
+    max-width: 100%;
 }
 
-body{
+body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
 }
 
 .wrapper {
@@ -27,6 +30,7 @@ body{
     margin-top: 100px;
     h1 {
         margin: 0;
+        color: #fff;
     }
 }
 
@@ -38,29 +42,34 @@ body{
     justify-content: center;
     width: 400px;
     height: 300px;
-    p {
-        /* margin-top: auto; */
-        font-family: inherit;
-    }
 
-    button {
+    p {
+        margin-top: 300px;
+        font-family: inherit;
+        /* font-size: 20px; */
+        color: #fff;
+    }
+}
+
+button {
         width: 100px;
         border: 2px solid black;
         border-radius: 5px;
         padding: 5px 10px;
-        background-color: aquamarine;
+        background-color: rgb(255, 255, 255);
+        color:rgb(13, 73, 53) ;
         font-family: inherit;
         cursor: pointer;
     }
-}
 
-.cards{
+
+.cards {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 70px;
     height: 140px;
-    background: rgb(150, 177, 150);
+    background: rgb(223, 87, 87);
     border: 1px solid black;
     cursor: pointer;
     transform-style: preserve-3d;
@@ -70,9 +79,17 @@ body{
 
 .flipped {
     /* need to change translate back again or there is a problem */
-    transform: translateY(-50%) rotateY(180deg);    
+    transform: translateY(-50%) rotateY(180deg);
 }
 
-.text_zone{
+.text_zone {
     margin-top: auto;
+    color: #fff;
 }
+
+.bet_zone {
+    margin-top: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+
