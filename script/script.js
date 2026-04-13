@@ -183,6 +183,8 @@ function win() {
     chips += bet
     myScore.textContent = `Chips: ${chips}`
     myBtn.disabled = true
+    bet = 0;
+    myBet.textContent = `You have bet ${bet} chips.`
 }
 //Function LOST CONDITION
 function loose() {
@@ -193,6 +195,8 @@ function loose() {
     chips -= bet
     myScore.textContent = `Chips: ${chips}`
     myBtn.disabled = true
+    bet = 0;
+    myBet.textContent = `You have bet ${bet} chips.`
     if (chips <= 0) {
         myStatus.textContent = `Sorry, you lost the game :/`
         myBtn.disabled = true;
