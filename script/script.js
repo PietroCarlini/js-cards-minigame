@@ -157,7 +157,7 @@ async function startGame() {
     //1.b add a round and increase speed 
     round++;
     roundCounter.textContent = `It's your ${round}^ round`
-    if (round % 3 === 0) {
+    if (round % 2 === 0) {
         speed = Math.max(speed-100, 100)
     }
     // 2. show the cards

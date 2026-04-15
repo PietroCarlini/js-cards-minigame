@@ -69,6 +69,8 @@ button {
     transform: translateY(-50%);
     width: 80px;
     height: 160px;
+    font-size: 40px;
+    align-content: center;
     background: rgb(223, 87, 87);
     border: 1px solid black;
     cursor: pointer;
