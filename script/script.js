@@ -13,6 +13,7 @@ const myScore = document.querySelector(`.score`)
 const myBet = document.querySelector(`.bet`)
 const betPlus = document.querySelector(`.btn_plus`)
 const betMinus = document.querySelector(`.btn_minus`)
+const betAllIn = document.querySelector(`.btn_allIn`)
 let chips = 100
 let bet = 0
 
@@ -244,6 +245,12 @@ betMinus.addEventListener(`click`, function () {
         myBet.textContent = `Minimum bet 10 chips!`
     }
 });
+
+betAllIn.addEventListener(`click`, function() {
+    bet = chips
+    myBet.textContent = `You have bet ${bet} chips.`
+    myBtn.disabled = false
+})
 
 
 // evento CORE, al click 
